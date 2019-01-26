@@ -62,6 +62,7 @@ def load_model(model, pretrained_path):
 
 if __name__ == '__main__':
     # net and model
+    # test in branch andy
     net = FaceBoxes(phase='test', size=None, num_classes=2)    # initialize detector
     net = load_model(net, args.trained_model)
     net.eval()
